@@ -4,13 +4,16 @@ public class Employee {
 	private String name;
 	private String id;
 	private int age;
+	private String gender;
 	
-	
-	
-	public Employee(String name, String id, int age) {
+	public Employee(String name, String id, int age, String gender) {
 		this.name = name;
 		this.id = id;
 		this.age = age;
+		this.gender = gender;
+	}
+	public Employee() {
+		super();
 	}
 	public String getName() {
 		return name;
@@ -30,6 +33,12 @@ public class Employee {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}		
 	
 	
 	
